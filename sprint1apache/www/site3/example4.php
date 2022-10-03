@@ -7,7 +7,7 @@
 		  }
 
 		function mensaje ($edad) {
-		  if (edad_en_7_anos ($edad) < 65) {
+		  if (edad_en_7_anos ($edad) > 65) {
 			return "En 7 a&ntilde;os tendr&aacute;s edad de jubilaci&oacute;n";
 			} else {
 			return "¡Disfruta de tu tiempo!";
