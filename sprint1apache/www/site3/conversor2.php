@@ -9,7 +9,7 @@
 			$v_pulgadas = $_POST["fcantidad"];
 			$v_metros = $v_pulgadas * 0.0254;
 				echo $v_pulgadas."pulgada(s) = ".$v_metros." metro(s)";
-			} elseif ($_POST["fundidad"] == "yarda" {
+			} elseif ($_POST["funidad"] == "yarda") {
 			$v_yarda = $_POST["fcantidad"];
 			$v_metros = $v_yarda * 0.9144;
 				echo $v_yarda."yarda(s) = ".$v_metros." metro(s)";
