@@ -56,6 +56,7 @@
 		font-family: 'helvetica neue', helvetica, arial, sans-serif;
 		font-weight: bold;
 		font-size: 15px;
+		letter-spacing: 1px;
 			}
 		.cuadrotexto {
 		background:  #e8edff;
@@ -88,12 +89,12 @@
 		
 		echo "<table>";
 		echo "<tr>";
-		echo "<th> 'ID' </th>";
-		echo "<th> 'Título' </th>";
-		echo "<th> 'Director' </th>";
-		echo "<th> 'Género' </th>";
-		echo "<th> 'Cartel' </th>";
-		echo "<th> 'Comentario' </th>";
+		echo "<th> ID </th>";
+		echo "<th> Título </th>";
+		echo "<th> Director </th>";
+		echo "<th> Género </th>";
+		echo "<th> Cartel </th>";
+		echo "<th> Comentario </th>";
 		echo "</tr>";
 		echo "<tr>";
 		echo "<td>$only_row[0]</td>";
