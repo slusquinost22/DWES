@@ -14,7 +14,7 @@
 		border-collapse: separate;
 		font-size: 12px;
 		margin: -10px;
-		width: 550px;
+		width: 600px;
 		}
 
 		th {
