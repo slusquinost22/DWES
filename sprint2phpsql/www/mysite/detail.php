@@ -69,13 +69,13 @@
 		echo "<th> 'Cartel' </th>";
 		echo "</tr>";
 		echo "<tr>";
-		echo "<td>$only_row[0]</td>";
+		echo "<td>.$only_row[0]</td>";
 		echo '<br>';
-		echo "<td>$only_row[1]</td>";
+		echo "<td>.$only_row[1]</td>";
 		echo '<br>';
-		echo "<td>$only_row[2]</td>";
+		echo "<td>.$only_row[2]</td>";
 		echo '<br>';
-		echo "<td>$only_row[3]</td>";
+		echo "<td>.$only_row[3]</td>";
 		echo '<br>';
 		echo "<td><img class='imagen' src='"$only_row[4]."'></td>";
 		echo "</tr>";
