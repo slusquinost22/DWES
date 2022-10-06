@@ -57,6 +57,13 @@
 		font-weight: bold;
 		font-size: 15px;
 			}
+		.cuadrotexto {
+		 background: rgba(255,255,255,0.3);
+        	border: none;
+        	border-radius: 4px;
+        	padding: 2%;
+        	color: blue;
+			}
 
 		img.imagen{width: 110px; height: 150px;}	
 			
@@ -115,7 +122,7 @@
 			<div class= "hijo2">
 			<p>Deja un nuevo comentario:</p>
 			<form action="/comment.php" method="post">
-			<textarea rows="4" cols="50" name="new_comment"></textarea><br>
+			<textarea class="cuadrotexto" rows="4" cols="50" name="new_comment"></textarea><br>
 			<input type="hidden" name="pelicula_id" value="<?php echo $pelicula_id; ?>">
 			<input type="submit" value="Comentar">
 			</form>
