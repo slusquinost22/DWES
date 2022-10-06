@@ -58,7 +58,7 @@
 		font-size: 15px;
 			}
 		.cuadrotexto {
-		 background: rgba(255,255,255,0.3);
+		 background: #b9c9fe;
         	border: solid 2px;
         	border-radius: 4px;
         	padding: 2%;
