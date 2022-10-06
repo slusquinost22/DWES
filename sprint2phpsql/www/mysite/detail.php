@@ -69,7 +69,7 @@
 		echo "<th> 'Cartel' </th>";
 		echo "</tr>";
 		echo "<tr>";
-		echo "<td><a href='/detail.php?id=<id>'>$row[0]</a></td>";
+		echo "<td>.only_$row[0]</td>";
 		echo '<br>';
 		echo "<td>.$only_row[1]</td>";
 		echo '<br>';
@@ -81,7 +81,6 @@
 		echo "</tr>";
 		echo "</table>";
 		
-		?>
 
 		?>
 		<h3>Comentarios:</h3>
