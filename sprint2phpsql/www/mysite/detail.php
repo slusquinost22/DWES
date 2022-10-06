@@ -58,11 +58,10 @@
 		font-size: 15px;
 			}
 		.cuadrotexto {
-		background: #b9c9fe;
+		background:  #e8edff;
         	border: solid 2px;
         	border-radius: 4px;
         	padding: 2%;
-        	color:  rgba(255,255,255,0.3);
 			}
 			
 		.boton {
