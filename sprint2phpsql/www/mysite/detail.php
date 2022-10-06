@@ -59,7 +59,7 @@
 			}
 		.cuadrotexto {
 		background:  #e8edff;
-        	border: solid 2px;
+        	border: solid 2px #aabcfe;
         	border-radius: 4px;
         	padding: 2%;
 			}
