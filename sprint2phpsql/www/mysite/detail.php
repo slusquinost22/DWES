@@ -45,11 +45,7 @@
 		margin: 1% 0 0 1px;
 		}
 
-		img.imagen{width: 110px; height: 150px;}
-		
-		li {
-		left: 1%;
-			}	
+		img.imagen{width: 110px; height: 150px;}	
 			
 		</style>
 		<div class= "contenedor">
