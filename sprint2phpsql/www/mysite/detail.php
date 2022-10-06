@@ -59,10 +59,10 @@
 			}
 		.cuadrotexto {
 		 background: rgba(255,255,255,0.3);
-        	border: none;
+        	border: solid;
         	border-radius: 4px;
         	padding: 2%;
-        	color: blue;
+        	color:  rgba(255,255,255,0.3);
 			}
 
 		img.imagen{width: 110px; height: 150px;}	
