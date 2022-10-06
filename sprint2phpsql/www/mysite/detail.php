@@ -55,6 +55,7 @@
 		p {
 		font-family: 'helvetica neue', helvetica, arial, sans-serif;
 		font-weight: bold;
+		font-size: 12px;
 			}
 
 		img.imagen{width: 110px; height: 150px;}	
