@@ -69,6 +69,8 @@
 		background: #b9c9fe;
 		border-top: 4px solid #aabcfe;
 		border-bottom: 4px solid #aabcfe;
+		border-left: 4px solid #aabcfe;
+		border-right: 4px solid #aabcfe;
 		
 			}
 
