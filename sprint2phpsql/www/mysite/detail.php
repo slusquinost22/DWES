@@ -64,6 +64,10 @@
         	padding: 2%;
         	color:  rgba(255,255,255,0.3);
 			}
+			
+		.boton {
+		background: #b9c9fe;
+			}
 
 		img.imagen{width: 110px; height: 150px;}	
 			
@@ -124,7 +128,7 @@
 			<form action="/comment.php" method="post">
 			<textarea class="cuadrotexto" rows="4" cols="50" name="new_comment"></textarea><br>
 			<input type="hidden" name="pelicula_id" value="<?php echo $pelicula_id; ?>">
-			<input type="submit" value="Comentar">
+			<input class="boton" type="submit" value="Comentar">
 			</form>
 			</div>
 		</div>
