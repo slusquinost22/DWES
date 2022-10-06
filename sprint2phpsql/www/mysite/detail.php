@@ -59,7 +59,7 @@
 			}
 		.cuadrotexto {
 		 background: rgba(255,255,255,0.3);
-        	border: solid;
+        	border: solid 2px;
         	border-radius: 4px;
         	padding: 2%;
         	color:  rgba(255,255,255,0.3);
