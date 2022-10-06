@@ -4,7 +4,7 @@
 <html>
 	<body>
 		<style>
-		table, tr, th, td, p{
+		table, tr, th, td {
 		text-align: center;
 		font-family: 'helvetica neue', helvetica, arial, sans-serif;
 			}
@@ -51,6 +51,11 @@
 		left: 30%;
 		margin: 1% 0 0 1px;
 		}
+		
+		p {
+		font-family: 'helvetica neue', helvetica, arial, sans-serif;
+		font-weight: bold;
+			}
 
 		img.imagen{width: 110px; height: 150px;}	
 			
