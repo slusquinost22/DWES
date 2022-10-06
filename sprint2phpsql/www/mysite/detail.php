@@ -101,9 +101,10 @@
 			echo "</tr>";
 			echo "</table>";
 			}
-			</div>
+				
 			mysqli_close($db);
 			?>
+			</div>
 			<div class= "hijo2">
 			
 			<p>Deja un nuevo comentario:</p>
