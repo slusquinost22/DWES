@@ -4,7 +4,7 @@
 <html>
 	<body>
 		<style>
-		table, tr, th, td{
+		table, tr, th, td, hijo2{
 		text-align: center;
 		font-family: 'helvetica neue', helvetica, arial, sans-serif;
 			}
@@ -47,7 +47,7 @@
 		
 		.hijo2 {
 		position: absolute;
-		top: 400px;
+		top: 300px;
 		left: 30%;
 		margin: 1% 0 0 1px;
 		}
