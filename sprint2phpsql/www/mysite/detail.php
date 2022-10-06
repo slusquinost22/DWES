@@ -48,6 +48,9 @@
 		img.imagen{width: 110px; height: 150px;}
 
 		</style>
+		<div class= "contenedor">
+			<div class= "hijo">
+
 		<?php
 		if (!isset($_GET['pelicula_id'])) {
 			die('No se ha especificado una pelicula');
@@ -92,5 +95,8 @@
 			mysqli_close($db);
 			?>
 		</ul>
+			</div>
+		</div>
+
 	</body>
 </html>
