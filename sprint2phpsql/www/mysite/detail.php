@@ -70,16 +70,13 @@
 		echo "<tr>";
 		echo "<td><a href='/detail.php?id=<id>'>$row[0]</a></td>";
 		echo '<br>';
-		echo "<td>$only_row[1]</td>";
+		echo "<td>.$only_row[1]</td>";
 		echo '<br>';
-		echo "<td>$only_row[2]</td>";
+		echo "<td>.$only_row[2]</td>";
 		echo '<br>';
-		echo "<td>$only_row[3]</td>";
+		echo "<td>.$only_row[3]</td>";
 		echo '<br>';
 		echo "<td><img class='imagen' src='".$only_row[4]."'></td>";
-		echo '<br>';
-		echo "<td>$only_row['c.comentario']</td>;
-		echo '<br>';
 		echo "</tr>";
 		echo "</table>";
 		}
@@ -89,15 +86,15 @@
 
 		?>
 		<h3>Comentarios:</h3>
-			<ul>
+		<ul>
 			<?php
-			$query2 = 'SELECT comentario FROM tComentarios WHERE pelicula_id='.$pelicula_id;
+			$query2 = 'SELECT * FROM tComentarios WHERE pelicula_id='.$pelicula_id;
 			$result2 = mysqli_query($db, $query2) or die('Query error');
 			while ($row = mysqli_fetch_array($result2)) {
 			echo '<li>'.$row['comentario'].'</li>';
 			}
 			mysqli_close($db);
 			?>
-			</ul>
+		</ul>
 	</body>
 </html>
