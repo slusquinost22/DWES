@@ -79,7 +79,7 @@
 		echo "<td>$only_row[3]</td>";
 		echo '<br>';
 		echo "<td><img class='imagen' src='$only_row[4]'></td>";
-		echo "</tr>";
+		
 		
 		
 
@@ -93,6 +93,7 @@
 			echo '<br>';
 			echo "<td>$row['comentario']</td>";
 			echo '<br>';
+			echo "</tr>";
 			echo "</table>";
 			}
 			mysqli_close($db);
