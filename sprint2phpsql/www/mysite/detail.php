@@ -4,7 +4,7 @@
 <html>
 	<body>
 		<style>
-		table, tr, th, td, hijo2{
+		table, tr, th, td, p{
 		text-align: center;
 		font-family: 'helvetica neue', helvetica, arial, sans-serif;
 			}
@@ -105,8 +105,8 @@
 			mysqli_close($db);
 			?>
 			</div>
-			<div class= "hijo2">
 			
+			<div class= "hijo2">
 			<p>Deja un nuevo comentario:</p>
 			<form action="/comment.php" method="post">
 			<textarea rows="4" cols="50" name="new_comment"></textarea><br>
