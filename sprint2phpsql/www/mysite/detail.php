@@ -38,7 +38,14 @@
 		position: relative;
 		}
 
-		.hijo {
+		.hijo1 {
+		position: absolute;
+		top: 20%;
+		left: 30%;
+		margin: 1% 0 0 1px;
+		}
+		
+		.hijo2 {
 		position: absolute;
 		top: 20%;
 		left: 30%;
@@ -49,7 +56,7 @@
 			
 		</style>
 		<div class= "contenedor">
-			<div class= "hijo">
+			<div class= "hijo1">
 
 		<?php
 		if (!isset($_GET['pelicula_id'])) {
@@ -94,9 +101,11 @@
 			echo "</tr>";
 			echo "</table>";
 			}
+			</div>
 			mysqli_close($db);
-			
 			?>
+			<div class= "hijo2">
+			
 			<p>Deja un nuevo comentario:</p>
 			<form action="/comment.php" method="post">
 			<textarea rows="4" cols="50" name="new_comment"></textarea><br>
