@@ -128,7 +128,7 @@
 			<div class= "hijo2">
 			<p>Deja un nuevo comentario:</p>
 			<form action="/comment.php" method="post">
-			<textarea class="cuadrotexto" rows="4" cols="50" name="new_comment"></textarea><br><br><br>
+			<textarea class="cuadrotexto" rows="4" cols="50" name="new_comment"></textarea><br><br>
 			<input type="hidden" name="pelicula_id" value="<?php echo $pelicula_id; ?>">
 			<input class="boton" type="submit" value="Comentar">
 			</form>
