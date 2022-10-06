@@ -67,7 +67,7 @@
 		echo "<th> 'Director' </th>";
 		echo "<th> 'Género' </th>";
 		echo "<th> 'Cartel' </th>";
-		echo "<th> 'Comentatio' </th>";
+		echo "<th> 'Comentario' </th>";
 		echo "</tr>";
 		echo "<tr>";
 		echo "<td>$only_row[0]</td>";
