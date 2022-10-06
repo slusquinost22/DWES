@@ -57,8 +57,6 @@
 		$result = mysqli_query($db, $query) or die('Query error');
 		$only_row = mysqli_fetch_array($result);
 		
-		<div class= "contenedor">
-			<div class= "hijo">
 		echo "<table>";
 		echo "<tr>";
 		echo "<th> 'ID' </th>";
@@ -81,8 +79,6 @@
 		echo "</table>";
 		}
 		?>
-			</div>
-		</div>
 
 		?>
 		<h3>Comentarios:</h3>
