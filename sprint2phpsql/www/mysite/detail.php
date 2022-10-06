@@ -77,7 +77,7 @@
 		echo "<td><img class='imagen' src='".$only_row[4]."'></td>";
 		echo "</tr>";
 		echo "</table>";
-		}
+		
 		?>
 
 		?>
