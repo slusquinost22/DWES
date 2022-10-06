@@ -47,7 +47,7 @@
 
 		img.imagen{width: 110px; height: 150px;}
 		
-		ul {
+		li {
 		left: 1px;
 			}	
 			
