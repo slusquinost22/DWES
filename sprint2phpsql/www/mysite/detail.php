@@ -67,6 +67,7 @@
 		echo "<th> 'Director' </th>";
 		echo "<th> 'Género' </th>";
 		echo "<th> 'Cartel' </th>";
+		echo "<th> 'Comentatio' </th>";
 		echo "</tr>";
 		echo "<tr>";
 		echo "<td>$only_row[0]</td>";
@@ -79,7 +80,7 @@
 		echo '<br>';
 		echo "<td><img class='imagen' src='$only_row[4]'></td>";
 		echo "</tr>";
-		echo "</table>";
+		
 		
 
 		?>
@@ -89,9 +90,13 @@
 			$query2 = 'SELECT * FROM tComentarios WHERE pelicula_id='.$pelicula_id;
 			$result2 = mysqli_query($db, $query2) or die('Query error');
 			while ($row = mysqli_fetch_array($result2)) {
-			echo '<li>'.$row['comentario'].'</li>';
+			echo '<br>';
+			echo "<td>$row['comentario']</td>";
+			echo '<br>';
+			echo "</table>";
 			}
 			mysqli_close($db);
+			
 			?>
 		</ul>
 			</div>
