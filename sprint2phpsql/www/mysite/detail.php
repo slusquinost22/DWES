@@ -89,7 +89,7 @@
 			$result2 = mysqli_query($db, $query2) or die('Query error');
 			while ($row = mysqli_fetch_array($result2)) {
 			echo '<br>';
-			echo "<td margin-left: 50px;><ul><li>$row[1]</li></ul></td>";
+			echo "<td><ol><li>$row[1]</li></ol></td>";
 			echo '<br>';
 			echo "</tr>";
 			echo "</table>";
