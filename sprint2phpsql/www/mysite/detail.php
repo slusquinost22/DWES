@@ -74,7 +74,7 @@
 		echo '<br>';
 		echo "<td><img class='imagen' src='".$row[4]."'></td>";
 		echo '<br>';
-		echo "<td>$row['comentario']</td>;
+		echo "<td>$row['c.comentario']</td>;
 		echo '<br>';
 		echo "</tr>";
 		echo "</table>";
