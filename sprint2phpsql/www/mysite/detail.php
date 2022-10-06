@@ -58,7 +58,7 @@
 		font-size: 15px;
 			}
 		.cuadrotexto {
-		 background: #b9c9fe;
+		background: #b9c9fe;
         	border: solid 2px;
         	border-radius: 4px;
         	padding: 2%;
@@ -67,6 +67,9 @@
 			
 		.boton {
 		background: #b9c9fe;
+		border-top: 4px solid #aabcfe;
+		border-bottom: 4px solid #aabcfe;
+		
 			}
 
 		img.imagen{width: 110px; height: 150px;}	
