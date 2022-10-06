@@ -1,86 +1,86 @@
 <?php
-	$ db = mysqli_connect( 'localhost' , 'root' , '1234' , 'mysitedb' ) or die ( 'Fail' );
+	$db = mysqli_connect('localhost', 'root', '1234', 'mysitedb') or die ('Fail');
 ?>
-< html >
-	< cuerpo >
-		< h1 > Conexión establecida </ h1 >
-		< estilo >
-		mesa ,  tr ,  th ,  td {
-		alineación de texto : centro;
-		familia de fuentes :  'helvetica neue' , helvetica , arial , sans-serif;
+<html>
+	<body>
+		<h1>Conexión establecida</h1>
+		<style>
+		table, tr, th, td{
+		text-align: center;
+		font-family: 'helvetica neue', helvetica, arial, sans-serif;
 			}
 
-		mesa {
-		disposición de la tabla : automático;
-		colapso de borde : separado;
-		tamaño de fuente :  12 px ;
-		margen :  -10 px ;
-		ancho :  550 píxeles ;
+		table {
+		table-layout: auto;
+		border-collapse: separate;
+		font-size: 12px;
+		margin: -10px;
+		width: 550px;
 		}
 
-		el {
-		fondo :  # b9c9fe ;
-		borde superior :  4 px sólido # aabcfe ;
-		borde inferior :  4 px sólido # aabcfe ;
-		espaciado entre letras :  2 px ;
-		relleno :  8 px ;	
+		th {
+		background: #b9c9fe;
+		border-top: 4px solid #aabcfe;
+		border-bottom: 4px solid #aabcfe;
+		letter-spacing: 2px;
+		padding: 8px;	
 		}
 
 		td {
-		relleno :  2 px ;
-		fondo :  # e8edff ;
-		borde inferior :  1 px sólido # fff ;
-		color :  # 669 ;
-		borde superior :  1 px sólido # aabcfe ;
-		espaciado entre letras :  1 px ;
+		padding: 2px;
+		background: #e8edff;
+		border-bottom: 1px solid #fff;
+		color: #669;
+		border-top: 1px solid #aabcfe;
+		letter-spacing: 1px;
 		}
 		
-		. contenedor {
-		posición : relativa;
+		.contenedor {
+		position: relative;
 		}
 
-		. hijo {
-		posición : absoluta;
-		arriba :  20 % ;
-		izquierda :  30 % ;
-		margen :  1 %  0  0  1 px ;
+		.hijo {
+		position: absolute;
+		top: 20%;
+		left: 30%;
+		margin: 1% 0 0 1px;
 		}
 
-		imagen _ imagen { ancho :  110 px ; altura :  150 píxeles ;}
+		img.imagen{width: 110px; height: 150px;}
 
-		</ estilo >
-		< div  clase = " contenedor " >
-			< div  clase = " hijo " >
+		</style>
+		<div class= "contenedor">
+			<div class= "hijo">
 		<?php
-		$ consulta = 'SELECT c.comentario, p.* FROM tComentarios c, tPeliculas p WHERE c.pelicula_id=p.id;' ;
-		$ resultado = mysqli_query ( $ db , $ consulta ) or die ( 'Error de consulta' );
-		while ( $ fila = mysqli_fetch_array ( $ resultado )) {
-		echo " <tabla> ";
-		eco " <tr> ";
-		echo " <th> 'ID' </th> ";
-		echo " <th> 'Título' </th> ";
-		echo " <th> 'Director' </th> ";
-		echo " <th> 'Género' </th> ";
-		echo " <th> 'Cártel' </th> ";
-		eco " </tr> ";
-		eco " <tr> ";
-		echo " <td><a href='/detail.php?id=<id>'> $ fila [ 0 ] </a></td> ";
-		eco  '<br>' ;
-		echo " <td> $ fila [ 1 ] </td> ";
-		eco  '<br>' ;
-		echo " <td> $ fila [ 2 ] </td> ";
-		eco  '<br>' ;
-		echo " <td> $ fila [ 3 ] </td> ";
-		eco  '<br>' ;
-		echo " <td><img class='imagen' src=' ". $ fila [ 4 ]." '></td> ";
-		eco  '<br>' ;
-    echo "<td> $row ['comentario']</td>";
-    echo '<br>';
-		eco " </tr> ";
-		echo " </tabla> ";
+		$query = 'SELECT c.comentario, p.* FROM tComentarios c, tPeliculas p WHERE c.pelicula_id=p.id;';
+		$result = mysqli_query($db, $query) or die ('Query error');
+		while ($row = mysqli_fetch_array($result)) {
+		echo "<table>";
+		echo "<tr>";
+		echo "<th> 'ID' </th>";
+		echo "<th> 'Título' </th>";
+		echo "<th> 'Director' </th>";
+		echo "<th> 'Género' </th>";
+		echo "<th> 'Cartel' </th>";
+		echo "</tr>";
+		echo "<tr>";
+		echo "<td><a href='/detail.php?id=<id>'>$row[0]</a></td>";
+		echo '<br>';
+		echo "<td>$row[1]</td>";
+		echo '<br>';
+		echo "<td>$row[2]</td>";
+		echo '<br>';
+		echo "<td>$row[3]</td>";
+		echo '<br>';
+		echo "<td><img class='imagen' src='".$row[4]."'></td>";
+		echo '<br>';
+		echo "<td>$row['comentario']</td>;
+		echo '<br>';
+		echo "</tr>";
+		echo "</table>";
 		}
 		?>
-			</ div >
-		</ div >
-	</ cuerpo >
-</ html >
+			</div>
+		</div>
+	</body>
+</html>
