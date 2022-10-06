@@ -3,7 +3,6 @@
 ?>
 <html>
 	<body>
-		<h1>Conexión establecida</h1>
 		<style>
 		table, tr, th, td{
 		text-align: center;
@@ -49,12 +48,17 @@
 		img.imagen{width: 110px; height: 150px;}
 
 		</style>
+		<?php
+		if (!isset($_GET['pelicula_id'])) {
+			die('No se ha especificado una pelicula');
+		}
+		$pelicula_id = $_GET['pelicula_id'];
+		$query = 'SELECT * FROM tPeliculas WHERE id='.$pelicula_id;
+		$result = mysqli_query($db, $query) or die('Query error');
+		$only_row = mysqli_fetch_array($result);
+		
 		<div class= "contenedor">
 			<div class= "hijo">
-		<?php
-		$query = 'SELECT c.comentario, p.* FROM tComentarios c, tPeliculas p WHERE c.pelicula_id=p.id;';
-		$result = mysqli_query($db, $query) or die ('Query error');
-		while ($row = mysqli_fetch_array($result)) {
 		echo "<table>";
 		echo "<tr>";
 		echo "<th> 'ID' </th>";
@@ -66,15 +70,15 @@
 		echo "<tr>";
 		echo "<td><a href='/detail.php?id=<id>'>$row[0]</a></td>";
 		echo '<br>';
-		echo "<td>$row[1]</td>";
+		echo "<td>$only_row[1]</td>";
 		echo '<br>';
-		echo "<td>$row[2]</td>";
+		echo "<td>$only_row[2]</td>";
 		echo '<br>';
-		echo "<td>$row[3]</td>";
+		echo "<td>$only_row[3]</td>";
 		echo '<br>';
-		echo "<td><img class='imagen' src='".$row[4]."'></td>";
+		echo "<td><img class='imagen' src='".$only_row[4]."'></td>";
 		echo '<br>';
-		echo "<td>$row['c.comentario']</td>;
+		echo "<td>$only_row['c.comentario']</td>;
 		echo '<br>';
 		echo "</tr>";
 		echo "</table>";
@@ -82,5 +86,18 @@
 		?>
 			</div>
 		</div>
+
+		?>
+		<h3>Comentarios:</h3>
+			<ul>
+			<?php
+			$query2 = 'SELECT comentario FROM tComentarios WHERE pelicula_id='.$pelicula_id;
+			$result2 = mysqli_query($db, $query2) or die('Query error');
+			while ($row = mysqli_fetch_array($result2)) {
+			echo '<li>'.$row['comentario'].'</li>';
+			}
+			mysqli_close($db);
+			?>
+			</ul>
 	</body>
 </html>
