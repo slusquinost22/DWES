@@ -74,10 +74,6 @@
 		font-weight: bold;
 		}
 			
-		.color li {
-		background-color: #7d060a !important;
-		}
-			
 		.cuadrotexto {
 		background:  #e8edff;
         	border: solid 2px #aabcfe;
@@ -137,7 +133,7 @@
 			$result2 = mysqli_query($db, $query2) or die('Query error');
 			while ($row = mysqli_fetch_array($result2)) {
 			echo '<br>';
-			echo "<ul>"'<li>'.$row[1].'</li>'"</ul>";
+			echo '<li>'.$row[1].'</li>';
 			echo '<br>';
 			}
 			mysqli_close($db);
