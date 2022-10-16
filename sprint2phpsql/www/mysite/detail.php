@@ -137,7 +137,7 @@
 			$result2 = mysqli_query($db, $query2) or die('Query error');
 			while ($row = mysqli_fetch_array($result2)) {
 			echo '<br>';
-			echo "<ul>"'<li class="color">'.$row[1].'</li>'"</ul>";
+			echo "<ul>"'<li>'.$row[1].'</li>'"</ul>";
 			echo '<br>';
 			}
 			mysqli_close($db);
