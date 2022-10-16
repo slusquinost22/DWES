@@ -34,9 +34,6 @@
 		letter-spacing: 1px;
 		}
 		
-		.contenedor {
-		position: relative;
-		}
 
 		.hijo1 {
 		position: absolute;
@@ -82,8 +79,7 @@
 
 		img.imagen{width: 110px; height: 150px;}
 		</style>
-		<div class= "contenedor">
-			<div class= "hijo1">
+		<div class= "hijo1">
 
 		<?php
 		if (!isset($_GET['pelicula_id'])) {
@@ -129,7 +125,6 @@
 			}
 			mysqli_close($db);
 			?>
-			
 			</div>
 		
 			<div class= "hijo2">
@@ -140,6 +135,5 @@
 			<input class="boton" type="submit" value="Comentar">
 			</form>
 			</div>
-		</div>
 	</body>
 </html>
