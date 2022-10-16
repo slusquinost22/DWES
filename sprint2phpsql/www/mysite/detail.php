@@ -40,8 +40,8 @@
 
 		.hijo1 {
 		position: absolute;
-		top: 5%;
-		left: 10%;
+		margin-top: 5%;
+		margin-left: 10%;
 		margin: 1% 0 0 1px;
 		}
 
@@ -49,13 +49,13 @@
 		position: absolute;
 		float: left;
 		margin-left: 10%;
-		margin-top: 40%;
+		margin-top: 30%;
 		}
 		
 		.hijo3{
 		position: absolute;
 		float: left;
-		margin-top: 5%;
+		margin-top: 8%;
 		margin-left: 55%;
 		}
 
