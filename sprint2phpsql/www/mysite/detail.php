@@ -49,13 +49,13 @@
 		position: absolute;
 		float: left;
 		margin-left: 15%;
-		margin-top: 5%;
+		margin-top: 10%;
 		}
 		
 		.hijo3{
 		position: absolute:
 		float: left;
-		margin-top: 5%;
+		margin-top: 8%;
 		margin-left: 60%;
 		}
 
