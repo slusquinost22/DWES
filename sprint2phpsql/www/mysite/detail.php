@@ -41,8 +41,8 @@
 		.hijo1 {
 		position: absolute;
 		float: left;
-		margin-top: 10px;
-		margin-left: 20px;
+		top: 10px;
+		left: 20px;
 		margin: 1% 0 0 1px;
 		}
 
