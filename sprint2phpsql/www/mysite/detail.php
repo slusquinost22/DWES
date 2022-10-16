@@ -48,8 +48,8 @@
 		.hijo2{
 		position: absolute;
 		float: left;
-		margin-left: 15%;
-		margin-top: 10%;
+		margin-left: 10%;
+		margin-top: 7%;
 		}
 		
 		.hijo3{
