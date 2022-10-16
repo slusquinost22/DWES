@@ -117,8 +117,12 @@
 			$result2 = mysqli_query($db, $query2) or die('Query error');
 			while ($row = mysqli_fetch_array($result2)) {
 			echo '<br>';
+<<<<<<< HEAD
 			echo '<p>Comentarios: <p>';
 			echo '<li>'.$row[1].'</li>';
+=======
+			echo "<td>"'<li>'.$row['comentario'].'</li>'"</td>";
+>>>>>>> dc0e3376de94ade5d352557ed588e2212b955bea
 			echo '<br>';
 			}
 				
