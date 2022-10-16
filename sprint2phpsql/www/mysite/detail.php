@@ -75,7 +75,7 @@
 		}
 			
 		li:before {
-		color:#b9c9fe;
+		background-color: #7d060a !important;
 		}
 			
 		.cuadrotexto {
