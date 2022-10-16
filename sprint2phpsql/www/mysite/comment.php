@@ -6,8 +6,8 @@
     <?php
       $pelicula_id = $_POST['pelicula_id'];
       $comentario = $_POST['new_comment'];
-      $query = "INSERT INTO tComentarios(comentario, pelicula_id, usuario_id)
-      VALUES ('".$comentario."',".$pelicula_id.",NULL)";
+      $query = "INSERT INTO tComentarios(comentario, pelicula_id, usuario_id, fecha)
+      VALUES ('".$comentario."',".$pelicula_id.",NULL, NOW())";
       mysqli_query($db, $query) or die('Error');
       echo "<p>Nuevo comentario ";
       echo mysqli_insert_id($db);
