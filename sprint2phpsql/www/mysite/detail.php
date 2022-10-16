@@ -42,7 +42,7 @@
 		position: absolute;
 		float: left;
 		top: 20px;
-		left: 30px;
+		left: 50px;
 		margin: 1% 0 0 1px;
 		}
 
