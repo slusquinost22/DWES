@@ -107,9 +107,6 @@
 		echo "</tr>";
 		echo "</table>";
 			
-		
-		
-			<div class="hijo3">
 			$query2 = 'SELECT * FROM tComentarios WHERE pelicula_id='.$pelicula_id;
 			$result2 = mysqli_query($db, $query2) or die('Query error');
 			while ($row = mysqli_fetch_array($result2)) {
@@ -119,12 +116,10 @@
 			echo '<li>'.$row[1].'</li>';
 			echo '<br>';
 			}
-			</div>
 			mysqli_close($db);
 			?>
 			</div>
 		
-			
 			<div class= "hijo2">
 			<p>Deja un nuevo comentario:</p>
 			<form action="/comment.php" method="post">
