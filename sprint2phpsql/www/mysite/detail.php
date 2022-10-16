@@ -7,7 +7,7 @@
 		body{
 		font-family: 'helvetica neue', helvetica, arial, sans-serif;	
 		}
-		
+
 		table, tr, th, td {
 		text-align: center;
 		}
