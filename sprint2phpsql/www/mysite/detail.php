@@ -37,7 +37,7 @@
 
 		.hijo1 {
 		position: absolute;
-		top: 20%;
+		top: 10%;
 		left: 10%;
 		margin: 1% 0 0 1px;
 		}
@@ -113,12 +113,11 @@
 		?>
 		</div>
 			<div class="hijo3">
+				<h1>Comentarios: </h1>
 			<?php
 			$query2 = 'SELECT * FROM tComentarios WHERE pelicula_id='.$pelicula_id;
 			$result2 = mysqli_query($db, $query2) or die('Query error');
 			while ($row = mysqli_fetch_array($result2)) {
-			echo '<br>';
-			echo "Comentarios: ";
 			echo '<br>';
 			echo '<li>'.$row[1].'</li>';
 			echo '<br>';
