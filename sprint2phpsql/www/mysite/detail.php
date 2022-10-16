@@ -44,13 +44,13 @@
 		left: 10%;
 		margin: 1% 0 0 1px;
 		}
-		
+
 		.hijo2{
 		float: left;
 		margin-left: 55%;
 		margin-top: 10%;
 		}
-		
+
 		p {
 		font-family: 'helvetica neue', helvetica, arial, sans-serif;
 		font-weight: bold;
@@ -62,19 +62,17 @@
         	border: solid 2px #aabcfe;
         	border-radius: 4px;
         	padding: 2%;
-			}
-			
+		}
+
 		.boton {
 		background: #b9c9fe;
 		border-top: 4px solid #aabcfe;
 		border-bottom: 4px solid #aabcfe;
 		border-left: 4px solid #aabcfe;
 		border-right: 4px solid #aabcfe;
-		
-			}
+		}
 
-		img.imagen{width: 110px; height: 150px;}	
-			
+		img.imagen{width: 110px; height: 150px;}
 		</style>
 		<div class= "contenedor">
 			<div class= "hijo1">
@@ -112,24 +110,20 @@
 		
 		</div>
 		
-			<div>	
+			<div>
 			$query2 = 'SELECT * FROM tComentarios WHERE pelicula_id='.$pelicula_id;
 			$result2 = mysqli_query($db, $query2) or die('Query error');
 			while ($row = mysqli_fetch_array($result2)) {
 			echo '<br>';
-<<<<<<< HEAD
-			echo '<p>Comentarios: <p>';
+			echo Comentarios: ;
+			echo '<br>';
 			echo '<li>'.$row[1].'</li>';
-=======
-			echo "<td>"'<li>'.$row['comentario'].'</li>'"</td>";
->>>>>>> dc0e3376de94ade5d352557ed588e2212b955bea
 			echo '<br>';
 			}
-				
 			mysqli_close($db);
 			?>
 			</div>
-			
+
 			<div class= "hijo2">
 			<p>Deja un nuevo comentario:</p>
 			<form action="/comment.php" method="post">
