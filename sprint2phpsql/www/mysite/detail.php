@@ -74,6 +74,10 @@
 		font-weight: bold;
 		}
 			
+		li:before {
+		color: red;
+		}
+			
 		.cuadrotexto {
 		background:  #e8edff;
         	border: solid 2px #aabcfe;
