@@ -41,15 +41,14 @@
 		.hijo1 {
 		position: absolute;
 		top: 20%;
-		left: 30%;
+		left: 10%;
 		margin: 1% 0 0 1px;
 		}
 		
-		.hijo2 {
-		position: absolute;
-		top: 300px;
-		left: 30%;
-		margin: 1% 0 0 1px;
+		.hijo2{
+		float: left;
+		margin-left: 55%;
+		margin-top: 10%;
 		}
 		
 		p {
@@ -96,7 +95,6 @@
 		echo "<th> Director </th>";
 		echo "<th> Género </th>";
 		echo "<th> Cartel </th>";
-		echo "<th> Comentario </th>";
 		echo "</tr>";
 		echo "<tr>";
 		echo "<td>$only_row[0]</td>";
@@ -108,20 +106,20 @@
 		echo "<td>$only_row[3]</td>";
 		echo '<br>';
 		echo "<td><img class='imagen' src='$only_row[4]'></td>";
+		echo "</tr>";
+		echo "</table>";
 		
 		
+		</div>
 		
-
-		
-			
+			<div>	
 			$query2 = 'SELECT * FROM tComentarios WHERE pelicula_id='.$pelicula_id;
 			$result2 = mysqli_query($db, $query2) or die('Query error');
 			while ($row = mysqli_fetch_array($result2)) {
 			echo '<br>';
-			echo "<td><li>$row[1]</li></td>";
+			echo '<p>Comentarios: <p>';
+			echo '<li>'.$row[1].'</li>';
 			echo '<br>';
-			echo "</tr>";
-			echo "</table>";
 			}
 				
 			mysqli_close($db);
