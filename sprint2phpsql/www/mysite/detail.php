@@ -56,7 +56,7 @@
 		position: absolute:
 		float: right;
 		margin-top: 10%;
-		margin-left: 80%;
+		margin-right: 20%;
 		}
 
 		p {
