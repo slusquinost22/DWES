@@ -40,7 +40,7 @@
 
 		.hijo1 {
 		position: absolute;
-		top: 10%;
+		top: 5%;
 		left: 10%;
 		margin: 1% 0 0 1px;
 		}
