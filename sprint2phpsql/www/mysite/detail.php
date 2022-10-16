@@ -115,6 +115,7 @@
 		echo "</tr>";
 		echo "</table>";
 		?>
+		</div>
 			<div class="hijo3">
 			<?php
 			$query2 = 'SELECT * FROM tComentarios WHERE pelicula_id='.$pelicula_id;
@@ -128,7 +129,7 @@
 			}
 			mysqli_close($db);
 			?>
-			</div>
+			
 			</div>
 		
 			<div class= "hijo2">
