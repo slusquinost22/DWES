@@ -14,14 +14,5 @@
       echo " añadido</p>";
       echo "<a href='/detail.php?pelicula_id=".$pelicula_id."'>Volver</a>";
       mysqli_close($db);
-    ?>
-      <?php
-      $pelicula_id = $_POST['pelicula_id'];
-      $fecha = $_POST['new_fecha'];
-      $query = "INSERT INTO tComentarios(comentario, pelicula_id, usuario_id, fecha)
-      VALUES ('".$comentario."',".$pelicula_id.",NULL,".$fecha.")";
-      mysqli_query($db, $query) or die('Error');
-      mysqli_close($db);
-    ?>
   </body>
 </html>
