@@ -56,7 +56,7 @@
 		margin-left: 60%;
 		}
 
-		p {
+		p, h1 {
 		font-family: 'helvetica neue', helvetica, arial, sans-serif;
 		font-weight: bold;
 		font-size: 15px;
