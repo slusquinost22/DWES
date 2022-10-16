@@ -55,8 +55,8 @@
 		.hijo3{
 		position: absolute:
 		float: right;
-		margin-top: 20%;
-		margin-left: 60%;
+		margin-top: 10%;
+		margin-left: 80%;
 		}
 
 		p {
