@@ -70,6 +70,7 @@
 		h1{
 		font-size: 25px;
 		text-decoration-line: underline;
+		color:  #aabcfe;
 			}
 		.cuadrotexto {
 		background:  #e8edff;
