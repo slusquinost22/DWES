@@ -133,7 +133,7 @@
 			$result2 = mysqli_query($db, $query2) or die('Query error');
 			while ($row = mysqli_fetch_array($result2)) {
 			echo '<br>';
-			echo '<li>'.$row[1]. " ( .$row[4].)"'</li>';
+			echo '<li>'.$row[1]. " (".$row[4].'</li>';
 			echo '<br>';
 			}
 			mysqli_close($db);
