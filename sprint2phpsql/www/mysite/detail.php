@@ -126,27 +126,27 @@
 		echo "</table>";
 		?>
 		</div>
-			<div class="hijo3">
-				<h1>Comentarios: </h1>
-			<?php
-			$query2 = 'SELECT * FROM tComentarios WHERE pelicula_id='.$pelicula_id;
-			$result2 = mysqli_query($db, $query2) or die('Query error');
-			while ($row = mysqli_fetch_array($result2)) {
-			echo '<br>';
-			echo '<li>'.$row[1]. "           ".$row[4].'</li>';
-			echo '<br>';
-			}
-			mysqli_close($db);
-			?>
-			</div>
-		
-			<div class= "hijo2">
-			<p>Deja un nuevo comentario:</p>
-			<form action="/comment.php" method="post">
-			<textarea class="cuadrotexto" rows="4" cols="50" name="new_comment"></textarea><br><br>
-			<input type="hidden" name="pelicula_id" value="<?php echo $pelicula_id; ?>">
-			<input class="boton" type="submit" value="Comentar">
-			</form>
-			</div>
+
+		<div class="hijo3">
+			<h1>Comentarios: </h1>
+		<?php
+		$query2 = 'SELECT * FROM tComentarios WHERE pelicula_id='.$pelicula_id;
+		$result2 = mysqli_query($db, $query2) or die('Query error');
+		while ($row = mysqli_fetch_array($result2)) {
+		echo '<br>';
+		echo '<li>'.$row[1]. "  ".$row[4].'</li>';
+		echo '<br>';
+		}
+		mysqli_close($db);
+		?>
+		</div>
+      		<div class= "hijo2">
+		<p>Deja un nuevo comentario:</p>
+		<form action="/comment.php" method="post">
+		<textarea class="cuadrotexto" rows="4" cols="50" name="new_comment"></textarea><br><br>
+		<input type="hidden" name="pelicula_id" value="<?php echo $pelicula_id; ?>">
+		<input class="boton" type="submit" value="Comentar">
+		</form>
+		</div>
 	</body>
 </html>
