@@ -7,8 +7,8 @@
 		table, tr, th, td {
 		text-align: center;
 		font-family: 'helvetica neue', helvetica, arial, sans-serif;
-			}
-
+		}
+		
 		table {
 		table-layout: auto;
 		border-collapse: separate;
@@ -16,7 +16,7 @@
 		margin: -10px;
 		width: 600px;
 		}
-
+		
 		th {
 		background: #b9c9fe;
 		border-top: 4px solid #aabcfe;
@@ -108,9 +108,7 @@
 		echo "</table>";
 		
 		
-		</div>
-		
-			<div>
+			<div class="hijo3">
 			$query2 = 'SELECT * FROM tComentarios WHERE pelicula_id='.$pelicula_id;
 			$result2 = mysqli_query($db, $query2) or die('Query error');
 			while ($row = mysqli_fetch_array($result2)) {
