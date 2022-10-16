@@ -2,8 +2,12 @@
 	$db = mysqli_connect('localhost', 'root', '1234', 'mysitedb') or die ('Fail');
 ?>
 <html>
-	<body>
+	<head>
 		<style>
+		body{
+		font-family: 'helvetica neue', helvetica, arial, sans-serif;	
+		}
+		
 		table, tr, th, td {
 		text-align: center;
 		font-family: 'helvetica neue', helvetica, arial, sans-serif;
@@ -52,7 +56,7 @@
 		.hijo3{
 		position: absolute:
 		float: left;
-		margin-top: 10%;
+		margin-top: 15%;
 		margin-left: 60%;
 		}
 
@@ -61,6 +65,11 @@
 		font-weight: bold;
 		font-size: 15px;
 		letter-spacing: 1px;
+		}
+			
+		h1{
+		font-size: 25px;
+		text-decoration-line: underline;
 			}
 		.cuadrotexto {
 		background:  #e8edff;
@@ -79,6 +88,8 @@
 
 		img.imagen{width: 110px; height: 150px;}
 		</style>
+	</head>
+	<body>
 		<div class= "hijo1">
 
 		<?php
