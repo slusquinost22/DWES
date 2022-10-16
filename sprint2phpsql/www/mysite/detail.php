@@ -118,12 +118,13 @@
 			echo '<br>';
 			echo '<li>'.$row[1].'</li>';
 			echo '<br>';
-			}</div>
+			}
+			</div>
 			mysqli_close($db);
 			?>
+			</div>
+		
 			
-			
-
 			<div class= "hijo2">
 			<p>Deja un nuevo comentario:</p>
 			<form action="/comment.php" method="post">
@@ -131,7 +132,6 @@
 			<input type="hidden" name="pelicula_id" value="<?php echo $pelicula_id; ?>">
 			<input class="boton" type="submit" value="Comentar">
 			</form>
-			</div>
 			</div>
 		</div>
 	</body>
