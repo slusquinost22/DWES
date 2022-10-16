@@ -10,7 +10,6 @@
 		
 		table, tr, th, td {
 		text-align: center;
-		font-family: 'helvetica neue', helvetica, arial, sans-serif;
 		}
 		
 		table {
@@ -50,18 +49,17 @@
 		position: absolute;
 		float: left;
 		margin-left: 15%;
-		margin-top: 10%;
+		margin-top: 5%;
 		}
 		
 		.hijo3{
 		position: absolute:
 		float: left;
-		margin-top: 15%;
+		margin-top: 5%;
 		margin-left: 60%;
 		}
 
-		p, h1 {
-		font-family: 'helvetica neue', helvetica, arial, sans-serif;
+		p {
 		font-weight: bold;
 		font-size: 15px;
 		letter-spacing: 1px;
@@ -71,7 +69,10 @@
 		font-size: 25px;
 		text-decoration-line: underline;
 		color:  #aabcfe;
-			}
+		letter-spacing: 1px;
+		font-weight: bold;
+		}
+			
 		.cuadrotexto {
 		background:  #e8edff;
         	border: solid 2px #aabcfe;
