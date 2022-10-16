@@ -47,8 +47,13 @@
 
 		.hijo2{
 		float: left;
-		margin-left: 55%;
-		margin-top: 10%;
+		margin-left: 15%;
+		margin-top: 40%;
+		}
+		
+		.hijo3{
+		float: right;
+		margin-top: 20%;
 		}
 
 		p {
