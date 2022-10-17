@@ -17,9 +17,9 @@ print ("2) 12")
 print ("3) 6")
 respuesta3 = input()
 
-resultado1 == 0
-resultado2 == 0
-resultado3 == 0
+resultado1 = 0
+resultado2 = 0
+resultado3 = 0
 
 if respuesta1 == 1:
     resultado1 +10
