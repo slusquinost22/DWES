@@ -1,3 +1,4 @@
+﻿
 print ("¿En que anho se descubrio America?")
 print ("1) 1492")
 print ("2) 1354")
@@ -36,4 +37,4 @@ else:
     resultado3 -5
 
 resultado = resultado1 + resultado2 + resultado3
-print ("Tu puntuacion es: $resultado")
+print ("Tu puntuación es: "+ resultado)
