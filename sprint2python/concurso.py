@@ -36,4 +36,4 @@ else:
     resultado3 -5
 
 resultado = resultado1 + resultado2 + resultado3
-print (resultado)
+print ("Tu puntuacion es: $resultado")
