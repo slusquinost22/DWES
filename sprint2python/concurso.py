@@ -1,6 +1,4 @@
-resultado1 == 0
-resultado2 == 0
-resultado3 == 0
+
 print ("¿En que anho se descubrio America?")
 print ("1) 1492")
 print ("2) 1354")
@@ -19,6 +17,9 @@ print ("2) 12")
 print ("3) 6")
 respuesta3 = input()
 
+resultado1 == 0
+resultado2 == 0
+resultado3 == 0
 
 if respuesta1 == 1:
     resultado1 +10
