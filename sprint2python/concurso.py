@@ -1,6 +1,6 @@
-resultado1 = 0
-resultado2 = 0
-resultado3 = 0
+resultado1 == 0
+resultado2 == 0
+resultado3 == 0
 print ("¿En que anho se descubrio America?")
 print ("1) 1492")
 print ("2) 1354")
