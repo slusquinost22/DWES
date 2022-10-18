@@ -4,7 +4,9 @@ from factorial2 import func_factorial2
 
 print("a) Calcular factorial con recursividad")
 print("b) Calcular factorial sin recursividad")
+
 opcion= input("Escoge una opción: ")
+
 factorial= int(input("Introduce un numero: "))
 
 if opcion == 'a':
