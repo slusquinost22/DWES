@@ -42,7 +42,7 @@ while True:
         print("\n""!Has ganado!, piedra gana a tijera""\n")
         usuario_ganadas +=1
         jugadas +=1
-    
+
     if programa=="Piedra" and usuario=="Tijera":
         print("\n""!Has perdido!, piedra gana a tijera""\n")
         programa_ganadas +=1
@@ -58,7 +58,7 @@ while True:
 
     if programa== usuario:
         print("\n""!Habéis empatado!""\n")
-    
+
     if jugadas==JUGADAS_MAX:
         break
 
