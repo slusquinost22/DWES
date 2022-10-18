@@ -9,15 +9,14 @@ for i in pregunta:
 
     if i == 1:
         print("¿En qué año se descubrió América?\n" 
-    "1) 1492\n" 
-    "2) 1354\n" 
+    "1) 1492\n"
+    "2) 1354\n"
     "3) 1942")
         respuesta = input("Introduce una opción: ")
         if respuesta == '1':
             resultado +=10
         else:
-            resultado -=5    
-        
+            resultado -=5
 
     elif i == 2:
         print("¿Cuántos planetas existen?\n"
@@ -40,6 +39,6 @@ for i in pregunta:
         if respuesta == '2':
             resultado +=10
         else:
-            resultado -=5    
+            resultado -=5
 
 print ("Tu puntuación es: " + str(resultado))
