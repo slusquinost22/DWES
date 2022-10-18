@@ -1,3 +1,4 @@
+import time
 from factorial import func_factorial
 from factorial2 import func_factorial2
 
@@ -9,8 +10,18 @@ opcion= input("Escoge una opción: ")
 factorial= int(input("Introduce un número: ")))
 
 if opcion == 'a':
+    start_time = time.time()
+    print(func_factorial(factorial))
+    end_time = time.time()
+    elapsed_time = end_time -start_time
+    print('El tiempo de ejecución ha sido :' + str(elapsed_time) + ' s')
     print(str("El factorial de"),factorial, str("es:" ),func_factorial(factorial))
 
 else:
+     start_time = time.time()
+    print(func_factorial2(factorial))
+    end_time = time.time()
+    elapsed_time = end_time -start_time
+    print('El tiempo de ejecución ha sido :' + str(elapsed_time) + ' s')
     print(str("El factorial de"),factorial, str("es:" ),func_factorial2(factorial))
 
