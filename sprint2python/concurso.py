@@ -1,32 +1,33 @@
 ﻿# -*- coding: utf-8 -*-
 resultado = 0
-print ("?En que anho se descubrio America?")
-print ("1) 1492")
-print ("2) 1354")
-print ("3) 1942")
-respuesta = int(input())
-if respuesta == 1:
+print("¿En qué año se descubrió América?\n" 
+    "1) 1492\n" 
+    "2) 1354\n" 
+    "3) 1942")
+respuesta = int(input("Introduce una opción: "))
+if respuesta == '1':
     resultado +10
 else:
     resultado -5
 
-print ("?Cuantos planetas existen?")
-print ("1) 9")
-print ("2) 5")
-print ("3) 8")
-respuesta = int(input())
-if respuesta == 3:
+print ("¿Cuántos planetas existen?\n"
+    "1) 9\n"
+    "2) 5\n"
+    "3) 8\n")
+respuesta = int(input("Introduce una opción: "))
+if respuesta == '3':
     resultado +10
 else:
     resultado -5
-print ("?Cuantos meses tienen 28 dias?")
-print ("1) 1")
-print ("2) 12")
-print ("3) 6")
-respuesta = int(input())
-if respuesta == 2:
+    
+print ("¿Cuántos meses tienen 28 días?\n"
+    "1) 1\n"
+    "2) 12\n"
+    "3) 6\n")
+respuesta = int(input("Introduce una opción: "))
+if respuesta == '2':
     resultado +10
 else:
     resultado -5
 
-print ("Tu puntuaci?n es: " + src(resultado))
+print ("Tu puntuación es: " + src(resultado))
