@@ -10,7 +10,6 @@ factorial= int(input("Introduce un número: "))
 
 if opcion == 'a':
     print(str("El factorial de"),factorial, str("es:" ),func_factorial(factorial))
-
 else:
     print(str("El factorial de"),factorial, str("es:" ),func_factorial2(factorial))
 
