@@ -19,7 +19,7 @@ if respuesta == 3:
     resultado +=10
 else:
     resultado -=5
-    
+
 print ("¿Cuántos meses tienen 28 días?\n"
     "1) 1\n"
     "2) 12\n"
