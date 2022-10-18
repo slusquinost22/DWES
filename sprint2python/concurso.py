@@ -4,7 +4,7 @@ print ("?En que anho se descubrio America?")
 print ("1) 1492")
 print ("2) 1354")
 print ("3) 1942")
-respuesta = input()
+respuesta = int(input())
 if respuesta == 1:
     resultado +10
 else:
@@ -14,7 +14,7 @@ print ("?Cuantos planetas existen?")
 print ("1) 9")
 print ("2) 5")
 print ("3) 8")
-respuesta = input()
+respuesta = int(input())
 if respuesta == 3:
     resultado +10
 else:
@@ -23,10 +23,10 @@ print ("?Cuantos meses tienen 28 dias?")
 print ("1) 1")
 print ("2) 12")
 print ("3) 6")
-respuesta = input()
+respuesta = int(input())
 if respuesta == 2:
     resultado +10
 else:
     resultado -5
 
-print ("Tu puntuaci?n es: " + resultado)
+print ("Tu puntuaci?n es: " + src(resultado))
