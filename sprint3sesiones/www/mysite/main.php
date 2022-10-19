@@ -4,8 +4,12 @@
 <html>
 	<body>
 		<h1>Conexión establecida</h1>
+		<div class="Logout">
+			<a href='logout.php'>Logout</a>
+		</div>
+
 		<style>
-		table, tr, th, td{
+		table, tr, th, td, .Logout{
 		text-align: center;
 		font-family: 'helvetica neue', helvetica, arial, sans-serif;
 		}
@@ -18,7 +22,7 @@
 		width: 550px;
 		}
 
-		th {
+		th, .Logout {
 		background: #b9c9fe;
 		border-top: 4px solid #aabcfe;
 		border-bottom: 4px solid #aabcfe;
@@ -47,7 +51,21 @@
 		}
 
 		img.imagen{width: 110px; height: 150px;}
+		
+		.Logout {
+		float:right;
+		width:6%;
+		height: 3%;
+		border-style: solid;
+		text-align: center;
+		margin-right: 5%;
+		border-left: 4px solid #333c87;
+		border-right: 4px solid #333c87;
+		margin-top:-4%;
+		}
 
+		a {
+		color: #000;}
 		</style>
 		<div class= "contenedor">
 			<div class= "hijo">
@@ -77,6 +95,7 @@
 		echo "</tr>";
 		echo "</table>";
 		}
+
 		?>
 			</div>
 		</div>

@@ -20,7 +20,7 @@
 		width: 600px;
 		}
 		
-		th {
+		th, .Logout {
 		background: #b9c9fe;
 		border-top: 4px solid #aabcfe;
 		border-bottom: 4px solid #aabcfe;
@@ -89,10 +89,27 @@
 		border-right: 4px solid #aabcfe;
 		}
 
+		.Logout {
+		float:right;
+		width: 6%;
+		height:3%;
+		text-align: center;
+		margin-right: 5%;
+		border-left: 4px solid #333c87;
+		border-right: 4px solid #333c87;
+		}
+
+		a {
+		color: #000;
+		}
+
 		img.imagen{width: 110px; height: 150px;}
 		</style>
 	</head>
 	<body>
+		<div class="Logout">
+			<a href='logout.php'>Logout</a>
+		</div>
 		<div class= "hijo1">
 
 		<?php
