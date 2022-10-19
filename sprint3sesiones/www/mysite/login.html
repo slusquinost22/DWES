@@ -1,11 +1,33 @@
+<!DOCTYPE html>
 <html>
-	<head><meta charset="UTF-8"></head>
+	<head>
+		<meta content="text/html" charset="UTF-8">
+	</head>
 	<body>
 		<h1>Login</h1>
-		<form action="login.php" method="post">
-			<input name="f_email" type="text" placeholder="e-mail"><br>
-			<input name="f_password" type="password" placeholder="Contraseña"><br>
+		<form  action="login.php" method="post" id="formulario">
+			<input name="f_email" type="text" placeholder="e-mail" id="email"><br>
+			<input name="f_password" type="password" placeholder="Contraseña" id="contraseña"><br>
 			<input type="submit" value="Iniciar sesión">
 		</form>
+		<script>
+			document.addEventListener("DOMContentLoaded", function(event){
+				document.getElementById('formulario').addEventListener('submit', validacion)
+			});
+			function validacion(e){
+				e.preventDefault();
+				if(this.querySelector('[name="f_email"]').value ==''){
+					alert("Introduce el e-mail de usuario");
+					return;
+				}
+				if(this.querySelector('[name="f_password"]').value.length < 1){
+					alert("Contraseña incorrecta");
+					return;
+				}
+				this.submit();
+			}
+			
+		</script>
+		
 	</body>
 </html>
