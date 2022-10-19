@@ -64,7 +64,7 @@
 		echo "<th> 'Cartel' </th>";
 		echo "</tr>";
 		echo "<tr>";
-		echo "<td><a href='/detail.php?pelicula_id=<id>'>$row[0]</a></td>";
+		echo "<td><a href='/detail.php?id=<id>'>$row[0]</a></td>";
 		echo '<br>';
 		echo "<td>$row[1]</td>";
 		echo '<br>';
