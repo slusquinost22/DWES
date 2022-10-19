@@ -8,7 +8,7 @@
 		table, tr, th, td{
 		text-align: center;
 		font-family: 'helvetica neue', helvetica, arial, sans-serif;
-			}
+		}
 
 		table {
 		table-layout: auto;
