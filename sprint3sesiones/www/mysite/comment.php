@@ -8,6 +8,7 @@
 	$user_id_a_insertar = 'NULL';
 	if (!empty($_SESSION['user_id'])) {
 		$user_id_a_insertar = $_SESSION['user_id'];
+	echo $user_id_a_insertar;
 	}
       $pelicula_id = $_POST['pelicula_id'];
       $comentario = $_POST['new_comment'];

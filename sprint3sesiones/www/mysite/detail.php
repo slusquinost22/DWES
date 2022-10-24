@@ -146,12 +146,13 @@
 
 		<div class="hijo3">
 			<h1>Comentarios: </h1>
+
 		<?php
-		$query2 = 'SELECT * FROM tComentarios WHERE pelicula_id='.$pelicula_id;
+		$query2 = 'SELECT tComentarios.comentario, tComentarios.fecha, tUsuarios.nombre FROM tComentarios, tUsuarios WHERE tComentarios.usuario_id=tUsuarios.id AND tComentarios.pelicula_id='.$pelicula_id;
 		$result2 = mysqli_query($db, $query2) or die('Query error');
 		while ($row = mysqli_fetch_array($result2)) {
 		echo '<br>';
-		echo '<li>'.$row[1]. "  ".$row[4].'</li>';
+		echo '<li>'.$row[0]. "<strong> Fecha: </strong> ".$row[1]. "<strong> Usuario: </strong>".$row[2]. '</li>';
 		echo '<br>';
 		}
 		mysqli_close($db);
