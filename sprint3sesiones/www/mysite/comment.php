@@ -2,6 +2,12 @@
   $db = mysqli_connect('localhost', 'root', '1234', 'mysitedb') or die('Fail');
 ?>
  <html>
+  <head>
+	<style>
+		p, a{font-family: 'helvetica neue', helvetica, arial, sans-serif;
+		}
+	</style>
+  </head
   <body>
     <?php
 	session_start();

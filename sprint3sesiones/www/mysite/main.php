@@ -5,11 +5,12 @@
 	<body>
 		<h1>PELICULAS</h1>
 		<div class="Logout">
-			<a href='logout.php'>Logout</a>
+			<a href='logout.php'>Cerrar sesión</a>
 		</div>
+		<div class="cambiar"><a href='cambiar.html'>Cambiar contraseña</a></div>
 
 		<style>
-		table, tr, th, td, .Logout, h1{
+		table, tr, th, td, .Logout, h1, .cambiar{
 		text-align: center;
 		font-family: 'helvetica neue', helvetica, arial, sans-serif;
 		}
@@ -22,7 +23,7 @@
 		width: 550px;
 		}
 
-		th, .Logout {
+		th, .Logout, .cambiar {
 		background: #b9c9fe;
 		border-top: 4px solid #aabcfe;
 		border-bottom: 4px solid #aabcfe;
@@ -94,14 +95,27 @@
 		
 		.Logout {
 		float:right;
-		width:6%;
-		height: 3%;
+		width:auto;
+		height: auto;
 		border-style: solid;
 		text-align: center;
 		margin-right: 5%;
 		border-left: 4px solid #333c87;
 		border-right: 4px solid #333c87;
 		margin-top:-4%;
+		padding: 1%;
+		}
+		.cambiar{
+		float:left;
+		width: auto;
+		height: auto;
+		border-style: solid;
+		text-align: center;
+		margin-left: 5%;
+		border-left: 4px solid #333c87;
+		border-right: 4px solid #333c87;
+		margin-top: -4%;
+		padding: 1%;
 		}
 
 		a.enlace {

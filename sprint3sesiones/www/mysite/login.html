@@ -2,14 +2,35 @@
 <html>
 	<head>
 		<meta content="text/html" charset="UTF-8">
+		<style>
+			div{
+			background: #b9c9fe;
+			width: 20%;
+			padding: 80px;
+			text-align: center;
+			padding-bottom: 100px;
+			float: left;
+			margin-left: 35%;
+			margin-top:10%;
+			border: solid 5px #aabcfe;
+			}
+
+			h1{
+			font-size:32px;
+			font-family: 'helvetica neue', helvetica, arial, sans-serif;
+			}
+
+		</style>
 	</head>
 	<body>
+		<div>
 		<h1>Login</h1>
 		<form  action="login.php" method="post" id="formulario">
 			<input name="f_email" type="text" placeholder="e-mail" id="email"><br>
 			<input name="f_password" type="password" placeholder="Contraseña" id="contraseña"><br>
 			<input type="submit" value="Iniciar sesión">
 		</form>
+		</div>
 		<script>
 			document.addEventListener("DOMContentLoaded", function(event){
 				document.getElementById('formulario').addEventListener('submit', validacion)
