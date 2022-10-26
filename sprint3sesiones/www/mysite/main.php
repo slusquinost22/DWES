@@ -150,11 +150,11 @@
 		}
 
 		@keyframes peliculas{
-		0%{color: #3b83bd; left: 0.25%; right: 0.75%;}
-		25%{color: #417dc1; left: 0.75% right: 0.75%;}
-		50%{color: #0096d2; left: 0.75%; right: 0.75%;}
-		75%{color: #4682b4; left: 0.25%; right: 0.75%;}
-		100%{color: #8892c6; left: 0.25%; right: 0.75%;}}
+		0%{color: #3b83bd;  right: 15.75%; left: 2%;}
+		25%{color: #417dc1; left: 10.75%; right: 2%; }
+		50%{color: #0096d2; right: 10.75%; left: 2%;}
+		75%{color: #4682b4; left: 10.25%; right:2%;}
+		100%{color: #8892c6; right: 5.75%; left: 2%;}}
 		</style>
 		<div class= "contenedor">
 			<div class= "hijo">
