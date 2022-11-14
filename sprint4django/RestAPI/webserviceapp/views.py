@@ -35,6 +35,8 @@ def devolver_pelicula_por_id(request, id_solicitado):
 	resultado = {
 		'id': pelicula.id,
 		'nombre': pelicula.nombre,
+		'url_imagen': pelicula.url_imagen,
+		'genero': pelicula.genero,
 		'comentarios': lista_comentarios
 	}
 	return JsonResponse(resultado, json_dumps_params={'ensure_ascii':False})
