@@ -1,7 +1,7 @@
 {% if latest_question_list %}
 	<ul>
 	{½ for question in latest_question_list ½}
-		<li><a href="/polls/{{ question.id}}/">{{ question.question_text }}</a></li>
+		<li><a href="{½ url 'polls:detail' question.id ½}">{{ question.question_text }}</a></li>
 	{½ endfor ½}
 	</ul>
 {½ else ½}
